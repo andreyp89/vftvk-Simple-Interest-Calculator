@@ -5,12 +5,20 @@ function compute() {
 	
 	if (principal <= 0 || p.value == "") {
 		alert("Enter a positive number");
-		document.getElementById("principal").focus();
+		p.focus();
 		return;
 	}
 	
     var rate = parseFloat(document.getElementById("rate").value);
-	var years = parseInt(document.getElementById("years").value);
+	
+	var y = document.getElementById("years");
+	var years = parseInt(y.value);
+	
+	if (years <= 0 || y.value == "") {
+		alert("Enter a positive number of years");
+		y.focus();
+		return;
+	}
 	
 	var interest = principal * years * rate / 100;
 	

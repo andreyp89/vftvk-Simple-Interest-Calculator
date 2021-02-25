@@ -13,7 +13,9 @@
 				<label>Amount</label> <input type="number" id="principal" value="1000000" />  <br/><br/>
 				<label>Interest Rate</label> <input type="range" id="rate" min="1" max="20" step="0.25" value="10.25" onchange="rateChange(event)" /><span id="rateDisplay">10.25 %</span><br/><br/>
 				<label>No. of Years</label>
-				<select id="years">
+				
+				<input type="number" id="years" list="yearList" value="1" onchange="yearsChange(event)">
+				<datalist id="yearList">
 					<option value="1">1</option>
 					<option value="2">2</option>
 					<option value="3">3</option>
@@ -24,7 +26,7 @@
 					<option value="8">8</option>
 					<option value="9">9</option>
 					<option value="10">10</option>
-				</select>
+				</datalist>
 
 				<br/><br/>
 				
