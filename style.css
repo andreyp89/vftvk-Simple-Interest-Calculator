@@ -29,3 +29,6 @@ label, button {
 	margin: 0 auto;
 }
 
+#years {
+	width: 60px;
+}
