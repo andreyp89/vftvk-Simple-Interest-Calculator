@@ -1,8 +1,9 @@
 // Main compute function
 function compute() {
-    var principal = parseFloat(document.getElementById("principal").value);
+	var p = document.getElementById("principal");
+    var principal = parseFloat(p.value);
 	
-	if (principal <= 0) {
+	if (principal <= 0 || p.value == "") {
 		alert("Enter a positive number");
 		document.getElementById("principal").focus();
 		return;
