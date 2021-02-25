@@ -29,7 +29,3 @@ label, button {
 	margin: 0 auto;
 }
 
-input[type=number], select {
-	border-radius: 3px;
-	border: 1px solid grey;
-}
